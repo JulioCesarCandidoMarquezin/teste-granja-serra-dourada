@@ -7,9 +7,6 @@
     align-items: center;
     padding: 20px;
 
-    position: sticky;
-    bottom: 0;
-    left: 0;
 
     box-shadow: var(--box-shadow-light);
     background-color: var(--color-tertiary);
