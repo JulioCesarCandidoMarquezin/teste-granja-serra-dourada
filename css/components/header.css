@@ -35,6 +35,7 @@
     text-decoration: none;
     color: var(--color-primary);
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 .navigation-link:hover {
