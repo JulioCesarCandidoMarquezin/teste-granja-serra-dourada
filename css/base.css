@@ -1,0 +1,20 @@
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #451f0f;
+    --color-tertiary: #f9c987;
+
+    --box-shadow-light: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--color-primary);
+}
