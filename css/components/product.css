@@ -3,7 +3,6 @@
 .flex-container {
     display: flex;
     flex-direction: inherit;
-    background-color: #f9c987;
 }
 
 .flex-container>div {
