@@ -17,6 +17,13 @@
 
 #logo {
     width: 80px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+#logo:hover {
+    scale: 1.1;
+    box-shadow: var(--box-shadow-light);
 }
 
 #navigation-links {
@@ -35,6 +42,7 @@
     text-decoration: none;
     color: var(--color-primary);
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 .navigation-link:hover {
