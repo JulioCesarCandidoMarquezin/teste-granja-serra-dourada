@@ -1,9 +1,9 @@
-export function getElement(elementId) {
-    return document.getElementById(elementId);
+function getElement(element) {
+    return document.getElementById(element);
 }
 
 async function loadHtml(component) {
-    const response = await fetch(`/components/${component}.html`);
+    const response = await fetch(`/components/html/${component}.html`);
 
     if (!response.ok) 
         throw new Error(`Failed to fetch HTML for ${component}`);
@@ -14,12 +14,17 @@ async function loadHtml(component) {
 async function loadCss(component) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = `/css/components/${component}.css`;
+    link.href = `/components/css/${component}.css`;
 
     document.head.appendChild(link);
 }
 
-export async function loadComponent(component, element) {
+async function loadComponent(component, element) {
+    if (!component) {
+        console.error("Error empty component");
+        return;
+    }
+
     component = component.toLowerCase();
     
     try {
@@ -32,4 +37,26 @@ export async function loadComponent(component, element) {
     } catch (error) {
         console.error(`Error loading component ${component}: ${error.message}`);
     }
+}
+
+export async function Footer() {
+    const footer = getElement("footer"); 
+    if (!footer) return;
+
+    loadComponent("footer", footer);
+}
+
+export async function Header() {
+    const footer = getElement("footer"); 
+    if (!footer) return;
+
+    loadComponent("header", header);
+}
+
+export async function Products() {
+    
+}
+
+export async function Product() {
+    
 }
