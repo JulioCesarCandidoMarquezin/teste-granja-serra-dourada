@@ -1,11 +1,4 @@
-import { getElement, loadComponent } from "./components.js";
+import { Footer, Header } from "/js/components.js";
 
-const header = getElement("header");
-const footer = getElement("footer");
-
-initializeComponents();
-
-function initializeComponents() {
-    loadComponent("header", header);
-    loadComponent("footer", footer);
-}
+Footer();
+Header();
