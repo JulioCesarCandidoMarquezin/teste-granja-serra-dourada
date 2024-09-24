@@ -21,26 +21,42 @@
 }
 
 .content button{
-    width: 110px;
-
     border-color: var(--color-tertiary);
     color: var(--color-primary);
     background-color: var(--color-tertiary);
+
     margin: 20px ;
 }
 .content button:hover{
     background-color: var(--color-primary);
     border-color: var(--color-tertiary);
+    color: var(--color-secondary);
 
 }
 .content h1{
     text-align: center;   
 }
 .content p{
+    font-size:x-large;
     margin: 20px;
 }
-.mapBox{
-    display: flex;
-    justify-content: center;
-    
+.mapBox {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mapBox h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.mapBox iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 1140px; 
+    height: 600px;
+    border: 0;
 }
