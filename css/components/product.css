@@ -1,23 +1,24 @@
 @import url('../base.css');
 
-h1{
+h1 {
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #53350c;
     text-shadow: 1px 1px #f9c98d;
-    background-color: #f9c98d;
+    background-color: #ffe1ba;
+    margin-top: 30px;
+    width: 100vw;
 }
 
 .flex-container {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .flex-container>div {
-    background-color:#ffcd88;
+    background-color: #6e6e6e09;
     border: #000000;
     border-radius: 10px;
     padding: 20px;
@@ -26,19 +27,21 @@ h1{
     margin: 30PX;
     margin-top: 10px auto;
     text-align: center;
-    box-shadow: 5px 1px 6px #5e4c34b9;
+    box-shadow: 0px 0px 6px #3120077c;
 }
 
-.produto{
+.produto {
     text-align: center;
     font-size: 25px;
-    color: #fffdf9;
-    text-shadow: 2px 1px #00000060;
+    color: #53350c;
+    text-shadow: 1px 1px #f9c98d;
     background-color: #fff1dd;
+    margin-top: 10px;
     border-radius: 10px;
 }
 
 .image {
     width: 90%;
     border-radius: 10%;
+    box-shadow: 0px 0px 6px #3b241181;
 }
