@@ -1,5 +1,5 @@
 #header {
-    width: 100vw;
+    width: 100%;
     height: clamp(10vh, 120px);
 
     display: flex;
