@@ -1,5 +1,8 @@
 @import url(/css/base.css);
-
+body{
+    background-image: url(/assets/images/contact_background.png) ;
+    background-repeat: no-repeat;
+}
 .container{
     display: flex;
     justify-content: center;
