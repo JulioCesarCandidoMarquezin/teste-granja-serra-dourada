@@ -2,6 +2,7 @@
 body{
     background-image: url(/assets/images/contact_background.png) ;
     background-repeat: no-repeat;
+    
 }
 .container{
     display: flex;
@@ -23,14 +24,14 @@ body{
     height: auto;
 }
 
-.content button{
+.botao button{
     border-color: var(--color-tertiary);
     color: var(--color-primary);
     background-color: var(--color-tertiary);
 
     margin: 20px ;
 }
-.content button:hover{
+.botao button:hover{
     background-color: var(--color-primary);
     border-color: var(--color-tertiary);
     color: var(--color-secondary);
