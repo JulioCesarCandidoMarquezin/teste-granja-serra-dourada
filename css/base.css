@@ -10,7 +10,7 @@
     --yellow-light: #FCCC8C;
     --white: #FFFFFF;
 
-    --box-shadow-light: 0 2px 5px rgba(0,0,0,0.1);
+    --box-shadow-light: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 * {
