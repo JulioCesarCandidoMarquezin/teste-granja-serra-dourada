@@ -5,17 +5,20 @@
     flex-direction: column;
 }
 
+/* Banner */
 #banner {
     width: 100%;
 }
 
+/* Solutions */
 .solutions-section {
     text-align: center;
     margin-bottom: 40px;
 }
 
 .solutions-title {
-    color: var(--color-text);;
+    color: var(--color-text);
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -34,6 +37,12 @@
     padding: 20px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px);
+    background-color: var(--beige-light);
 }
 
 .solution-card h3 {
@@ -45,4 +54,158 @@
 .solution-card p {
     color: var(--secondary-color);
     font-size: 1rem;
+}
+
+/* Highlight */
+.highlights-container:nth-child(odd) {
+    background-color: var(--beige-light);
+}
+
+.highlights-container:nth-child(even) {
+    background-color: var(--brown-light);
+}
+
+.solution-highlight {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+
+    margin: 0 auto;
+    padding: 80px 20px;
+    gap: 20px;
+}
+
+.solution-text {
+    max-width: 600px;
+}
+
+.solution-text h2 {
+    color: var(--color-text);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.solution-text p {
+    color: var(--brown-light);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.solution-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--yellow-dark);
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.solution-button:hover {
+    box-shadow: var(--box-shadow-light);
+    background-color: var(--yellow-light);
+}
+
+.solution-image img {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .solution-highlight {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 10px; 
+    }
+
+    .solution-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .solution-text h2 {
+        font-size: 2rem; 
+    }
+
+    .solution-highlight {
+        gap: 10px;
+    }
+}
+
+/* Differentials */
+.differentials-section {
+    width: 100%;
+    background-color: var(--yellow-light);
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.differentials-title {
+    font-size: 2rem;
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.differentials-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch; 
+    justify-content: center;
+}
+
+.differential {
+    background-color: var(--beige-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    transition: transform 0.3s ease;
+}
+
+.differential:hover {
+    transform: scale(1.05);
+}
+
+.differential h3 {
+    color: var(--color-text);
+    font-size: 1.5rem;
+}
+
+.differential p {
+    color: var(--brown-light);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .differentials-section {
+        padding: 20px;
+    }
+
+    .differentials-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .differential h3 {
+        font-size: 1.3rem;
+    }
+
+    .differential p {
+        font-size: 0.9rem;
+    }
 }
