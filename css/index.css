@@ -57,14 +57,6 @@
 }
 
 /* Highlight */
-.highlights-container:nth-child(odd) {
-    background-color: var(--beige-light);
-}
-
-.highlights-container:nth-child(even) {
-    background-color: var(--brown-light);
-}
-
 .solution-highlight {
     width: 100%;
 
@@ -77,6 +69,14 @@
     margin: 0 auto;
     padding: 80px 20px;
     gap: 20px;
+}
+
+#solution-in-natura {
+    background-color: var(--beige-light);
+}
+
+#solution-pasteurizados {
+    background-color: var(--primary-color);
 }
 
 .solution-text {
@@ -143,7 +143,7 @@
 /* Differentials */
 .differentials-section {
     width: 100%;
-    background-color: var(--yellow-light);
+    background-color: #dad0b9;
     padding: 30px;
     text-align: center;
     margin: 0 auto;
@@ -166,7 +166,7 @@
 }
 
 .differential {
-    background-color: var(--beige-light);
+    background-color: #ede8dc;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
