@@ -1,8 +1,25 @@
 @import url(/css/base.css);
 
-main {
-    width: 100%;
+:root {
+    --color-text: #5E3012;
+    --brown-light: #997C64;
+    --beige-light: #DECEB7;
+    --yellow-dark: #F0CA74;
+    --yellow-light: #FCCC8C;
+    --white: #FFFFFF;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--beige-light);
+    color: var(--color-text);
+}
+
+.main-content {
     display: flex;
     flex-direction: column;
 }
