@@ -1,6 +1,7 @@
 #header {
     width: 100%;
-    height: clamp(10vh, 120px);
+    height: 80px;
+    z-index: 9999;
 
     display: flex;
     align-items: center;
