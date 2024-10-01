@@ -1,6 +1,5 @@
 @import url('../base.css');
 
-
 .header {
     background-image: url('/assets/images/logo.webp');
 
@@ -37,10 +36,6 @@
     margin-bottom: 25px;
 }
 
-/* .history-section {
-    padding: 3rem 0;
-} */
-
 .history-section .card {
     border: none;
     background-color: #fefefe;
@@ -75,16 +70,15 @@
     font-weight: bold;
 }
 
-.carousel{
+.carousel {
     width: 400px;
-
 }
 
-.carousel img{
+.carousel img {
     height: 320px;
 }
 
-.history-section{
+.history-section {
     padding-bottom: 5px;
 }
 
@@ -118,16 +112,8 @@
     text-align: center;
     font-size: 25px;
     color: #53350c;
-    /* text-shadow: 1px 1px #f9c98d; */
     background-color: #fff1dd00;
     box-shadow: 0px 0px 6px #3120077c;
     margin-top: 15px;
-
     border-radius: 10px;
 }
-
-/* .image {
-    width: 10px;
-    border-radius: 10%;
-    box-shadow: 0px 0px 6px #3b241181;
-} */
