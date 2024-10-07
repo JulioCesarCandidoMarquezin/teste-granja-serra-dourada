@@ -2,6 +2,9 @@
     --color-primary: #ffffff;
     --color-secondary: #451f0f;
     --color-tertiary: #f9c987;
+    --color-test-darkblue: #044c54;
+    --color-test-lightblue: #669496;
+    --color-test-lightgray:#b4c4cc;
 
     --box-shadow-light: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -10,7 +13,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     width: 100%;
 
     margin: 0;
