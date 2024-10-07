@@ -71,11 +71,11 @@
     gap: 20px;
 }
 
-#solution-in-natura {
-    background-color: var(--beige-light);
+.highlights-container .solution-highlight:nth-child(odd) {
+    background-color: var(--beige-light); 
 }
 
-#solution-pasteurizados {
+.highlights-container .solution-highlight:nth-child(even) {
     background-color: var(--primary-color);
 }
 
