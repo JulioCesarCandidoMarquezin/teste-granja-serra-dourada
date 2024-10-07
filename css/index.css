@@ -19,7 +19,17 @@
 .solutions-title {
     color: var(--color-text);
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.solutions-title:after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #f9c987;
+    display: block;
+    margin: 0.5rem auto;
+    margin-bottom: 25px;
 }
 
 .solutions-container {
