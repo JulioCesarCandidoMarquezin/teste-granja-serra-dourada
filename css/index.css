@@ -69,10 +69,12 @@
 /* Highlight */
 .highlights-container .highlight:nth-child(odd) {
     background-color: var(--beige-light); 
+    color: var(--color-text);
 }
 
 .highlights-container .highlight:nth-child(even) {
     background-color: var(--primary-color);
+    color: var(--brown-light);
 }
 
 .highlight {
@@ -100,9 +102,10 @@
 }
 
 .highlight-text p {
-    color: var(--brown-light);
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    /* color: var(--brown-light); */
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    text-align: justify;
+    margin: 20px;
 }
 
 .highlight-button {
@@ -123,8 +126,8 @@
 }
 
 .highlight-image img {
+    max-width: clamp(300px, 90%, 800px);
     border-radius: 12px;
-    max-width: 100%;
     height: auto;
 }
 
