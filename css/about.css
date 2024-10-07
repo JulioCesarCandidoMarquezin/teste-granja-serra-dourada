@@ -5,7 +5,7 @@ body {
     background-color: #f5f5f5;
 }
 .header {
-    background-image: url('/imagens/logo.jpg');
+    background-image: url('/assets/images/logo.jpg');
     
     color: white;
     text-align: center;
