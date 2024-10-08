@@ -1,5 +1,19 @@
 @import url(/css/base.css);
 
+:root {
+    --brown-dark: #5E3012;
+    --brown-light: #997C64;
+    --beige-light: #DECEB7;
+    --yellow-dark: #F0CA74;
+    --yellow-light: #FCCC8C;
+
+    --box-shadow-light: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    --size-title: clamp(1.5rem, 2vw, 2.5rem);
+    --size-subtitle: clamp(1.25rem, 1.75vw, 1.5rem);
+    --size-text: clamp(1rem, 1.5vw, 1.25rem);
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -17,7 +31,7 @@
 }
 
 .cards-title {
-    color: var(--color-text);
+    color: var(--brown-dark);
     margin-top: 20px;
     margin-bottom: 40px;
 }
@@ -40,14 +54,14 @@
 }
 
 .card {
+    flex-basis: clamp(200px, 25%, 300px);
     background-color: var(--accent-color);
     border: 2px solid var(--primary-color);
     border-radius: 15px;
-    width: 250px;
     padding: 20px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.4s ease, background-color 0.4s ease;
 }
 
 .card:hover {
@@ -57,7 +71,7 @@
 
 .card h3 {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: var(--size-subtitle);
     margin-bottom: 10px;
 }
 
@@ -69,7 +83,7 @@
 /* Highlight */
 .highlights-container .highlight:nth-child(odd) {
     background-color: var(--beige-light); 
-    color: var(--color-text);
+    color: var(--brown-dark);
 }
 
 .highlights-container .highlight:nth-child(even) {
@@ -96,23 +110,22 @@
 }
 
 .highlight-text h2 {
-    color: var(--color-text);
+    color: var(--brown-dark);
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .highlight-text p {
-    /* color: var(--brown-light); */
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: var(--size-text);
     text-align: justify;
-    margin: 20px;
+    margin: 40px 30px;
 }
 
 .highlight-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--yellow-dark);
-    color: var(--color-text);
+    color: var(--brown-dark);
     font-size: 1rem;
     font-weight: bold;
     border-radius: 8px;
@@ -126,19 +139,29 @@
 }
 
 .highlight-image img {
-    max-width: clamp(300px, 90%, 800px);
+    width: clamp(300px, 90%, 800px);
+    max-height: calc(100vh - 70px - 40px);
     border-radius: 12px;
-    height: auto;
 }
 
 @media (max-width: 768px) {
     .highlight {
         flex-direction: column;
-        text-align: center;
-        padding: 40px 10px; 
+        text-align: center; 
+        padding: 40px 10px;
+    }
+
+    .highlight-text {
+        order: 1; 
+    }
+
+    .highlight-button {
+        order: 2; 
+        margin-top: 10px; 
     }
 
     .highlight-image {
+        order: 3; 
         margin-top: 20px;
     }
 }
@@ -164,7 +187,7 @@
 
 .differentials-title {
     font-size: 2rem;
-    color: var(--color-text);
+    color: var(--brown-dark);
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     margin-bottom: 40px;
@@ -195,7 +218,7 @@
 }
 
 .differential h3 {
-    color: var(--color-text);
+    color: var(--brown-dark);
     font-size: 1.5rem;
 }
 
