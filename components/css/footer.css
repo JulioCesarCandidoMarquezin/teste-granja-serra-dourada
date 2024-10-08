@@ -34,14 +34,14 @@
     color: var(--color-secondary);
 }
 
-@media only screen and (min-width: 361px) { 
-    #whatsapp-mobile {
+@media (pointer: coarse) { 
+    #whatsapp-web {
         display: none;
     }
 }
 
-@media only screen and (max-width: 360px) { 
-    #whatsapp-web {
+@media (pointer: fine) { 
+    #whatsapp-mobile {
         display: none;
     }
 }
