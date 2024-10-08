@@ -58,7 +58,7 @@ export async function Header() {
 
 function menuToggle() {
     const menuLinks = document.getElementById('menu-box');
-    const menuIcon = document.getElementById('menu-icon');
+    const menuIcon = document.getElementById('menu-icon');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
     if (menuLinks.classList.contains('hidden')) {
         menuLinks.classList.remove('hidden');
