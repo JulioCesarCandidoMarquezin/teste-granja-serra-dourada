@@ -2,15 +2,6 @@
     --color-primary: #ffffff;
     --color-secondary: #451f0f;
     --color-tertiary: #f9c987;
-
-    --color-text: #5E3012;
-    --brown-light: #997C64;
-    --beige-light: #DECEB7;
-    --yellow-dark: #F0CA74;
-    --yellow-light: #FCCC8C;
-    --white: #FFFFFF;
-
-    --box-shadow-light: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 * {
