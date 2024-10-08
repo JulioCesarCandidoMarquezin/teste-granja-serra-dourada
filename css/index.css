@@ -177,6 +177,12 @@
     }
 }
 
+@media (orientation: landscape) {
+    .highlight-image {
+        max-height: max-content;
+    }
+}
+
 /* Differentials */
 .differentials-section {
     width: 100%;
