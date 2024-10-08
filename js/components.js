@@ -47,16 +47,8 @@ export async function Footer() {
 }
 
 export async function Header() {
-    const footer = getElement("footer"); 
-    if (!footer) return;
+    const header = getElement("header"); 
+    if (!header) return;
 
     loadComponent("header", header);
-}
-
-export async function Products() {
-    
-}
-
-export async function Product() {
-    
 }
