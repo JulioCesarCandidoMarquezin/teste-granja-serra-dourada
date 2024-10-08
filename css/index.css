@@ -147,7 +147,7 @@
 @media (max-width: 768px) {
     .highlight {
         flex-direction: column;
-        text-align: center; 
+        align-items: center;
         padding: 40px 10px;
     }
 
@@ -163,6 +163,7 @@
     .highlight-image {
         order: 3; 
         margin-top: 20px;
+        height: fit-content;
     }
 }
 
