@@ -17,20 +17,8 @@
     background-color: var(--color-tertiary);
 }
 
-#identity {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
 #logo {
     height: 60px;
-}
-
-#name {
-    font-size: lamp(1.25rem, 1.75vw, 1.5rem);
-    color: white;
-    margin: auto;
 }
 
 #menu {
