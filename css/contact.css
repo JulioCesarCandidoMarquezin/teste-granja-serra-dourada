@@ -60,6 +60,18 @@
     border: 0;
     border-radius: 25px;
 }
+.top{
+    align-items: center;
+    text-align: center; 
+    margin-top: 2rem;
+}
+
+.top img{
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+}
+
 
 @media screen and (min-width: 1025px) {
    #maps{
