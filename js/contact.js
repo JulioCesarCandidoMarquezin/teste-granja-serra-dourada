@@ -11,3 +11,16 @@ btn_loc.addEventListener("click", () => {
     }
 
 })
+
+const btn_talk = document.querySelector("#btn-talk");
+const blocks = document.querySelectorAll(".content");
+const email_box = document.querySelector("#email-box");
+
+btn_talk.addEventListener("click", () => {
+    
+    blocks.forEach((block) => {
+        block.style.display = 'none';
+    })
+    email_box.style.display = 'flex';
+    btn_loc.style.display = 'none';
+})
