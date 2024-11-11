@@ -42,13 +42,12 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.mission-section .text-center {
+/* .mission-section .text-center {
     color: #333;
     margin-bottom: 30px;
 }
 
 .mission-section {
-
     background-color: #dad0b9;
     padding: 4rem 0;
     color: #fff;
@@ -76,10 +75,16 @@
 
 .carousel img {
     height: 320px;
-}
+} */
 
 .history-section {
     padding-bottom: 5px;
+}
+
+.image{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
 }
 
 .flex-container {
@@ -87,16 +92,15 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #f9c987;
-    width: 1400px;
-    border-radius: 20px;
+    background-color: #deceb7;
+    max-width: auto;
     margin: 0px auto;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     margin-top: 20px;
 }
 
 .flex-container>div {
-    background-color: #ede8dc;
+    background-color: #d4d0c571;
     border: #000000;
     border-radius: 10px;
     padding: 20px;
@@ -105,15 +109,15 @@
     margin: 30PX;
     margin-top: 10px auto;
     text-align: center;
-    box-shadow: 0px 0px 6px #3120077c;
+    /* box-shadow: 0px 0px 6px #3120077c; */
 }
 
 .produto {
     text-align: center;
-    font-size: 25px;
-    color: #53350c;
-    background-color: #fff1dd00;
-    box-shadow: 0px 0px 6px #3120077c;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #ffffff00;
+    /* box-shadow: 0px 0px 6px #3120077c; */
     margin-top: 15px;
     border-radius: 10px;
 }
