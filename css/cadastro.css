@@ -5,13 +5,13 @@
     gap: 30px;
     padding: 20px;
     margin: 40px;
-    
+
 }
 
 .content{
     border-radius: 25px;
     text-align: justify;
-    background-color: #FFFFFF;
+    background-color: #dad0b9;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(107, 106, 106, 0.19);
 
