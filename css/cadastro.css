@@ -1,0 +1,114 @@
+@import url(/css/base.css);
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 40px;
+    
+}
+
+.content{
+    border-radius: 25px;
+    text-align: justify;
+    background-color: #FFFFFF;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(107, 106, 106, 0.19);
+
+    width: 900px;
+    height: auto;
+}
+
+.botao button{
+    border-color: var(--color-tertiary);
+    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+
+    margin: 20px ;
+}
+.botao button:hover{
+    background-color: var(--color-primary);
+    border-color: var(--color-tertiary);
+    color: var(--color-secondary);
+
+}
+.content h1{
+    text-align: center;   
+}
+.content p{
+    font-size:x-large;
+    margin: 20px;
+}
+.mapBox {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mapBox h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.mapBox iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 1140px; 
+    height: 600px;
+    border: 0;
+    border-radius: 25px;
+}
+.top{
+    align-items: center;
+    text-align: center; 
+    margin-top: 2rem;
+}
+
+.top img{
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+
+@media screen and (min-width: 1025px) {
+   #maps{
+    display: none;
+   }
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        background-image: none;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    #btn-loc{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .content{
+        font-size: medium;
+    }
+}
