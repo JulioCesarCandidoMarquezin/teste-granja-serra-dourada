@@ -30,7 +30,6 @@ btn_talk.addEventListener("click", () => {
 })
 
 btn_cancel.addEventListener("click", () => {
-
     blocks.forEach((block) =>{
         if (block.id != "email-box"){
             block.style.display = 'block';
@@ -39,5 +38,4 @@ btn_cancel.addEventListener("click", () => {
         }
         btn_loc.style.display = 'flex';
     })
-
 })
