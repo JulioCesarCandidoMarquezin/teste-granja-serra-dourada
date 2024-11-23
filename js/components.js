@@ -47,16 +47,26 @@ export async function Footer() {
 }
 
 export async function Header() {
-    const footer = getElement("footer"); 
-    if (!footer) return;
+    const header = getElement("header"); 
+    if (!header) return;
 
-    loadComponent("header", header);
+    await loadComponent("header", header);
+
+    const menuToggleBtn = document.getElementById('menu-toggle');
+    menuToggleBtn.addEventListener('click', menuToggle);
 }
 
-export async function Products() {
-    
-}
+function menuToggle() {
+    const menuLinks = document.getElementById('menu-box');
+    const menuIcon = document.getElementById('menu-icon');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
-export async function Product() {
-    
+    if (menuLinks.classList.contains('hidden')) {
+        menuLinks.classList.remove('hidden');
+        menuLinks.classList.add('show');
+        menuIcon.src = "/assets/icons/menu-open.png"; 
+    } else {
+        menuLinks.classList.remove('show');
+        menuLinks.classList.add('hidden');
+        menuIcon.src = "/assets/icons/menu-closed.png"; 
+    }
 }
