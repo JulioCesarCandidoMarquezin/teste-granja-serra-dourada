@@ -1,12 +1,12 @@
 <?php
 final class Database{
-    private static $driver = "mysql";# driver de conexão com banco de dados
-    private static $host = "localhost";#Endereço do banco de dados
-    private static $dbname = "damaris1";#Nome do banco de dados
+    private static $driver = "mysql"; # Driver de conexão com banco de dados
+    private static $host = "localhost"; # Endereço do banco de dados
+    private static $dbname = "granja-serra-dourada"; #Nome do banco de dados
     private static $port = 3306; # Porta de conexão
-    private static $username = "root"; #usuário do banco de dados
-    private static $password = ""; # senha do banco de dados
-    private static $charset = "utf8mb4"; # tipo de cartacteres
+    private static $username = "root"; # Usuário do banco de dados
+    private static $password = "root"; # Senha do banco de dados
+    private static $charset = "utf8mb4"; # Tipo de cartacteres
     private static $pdo = null;
     private static $error;
 
