@@ -1,14 +1,15 @@
 <?php
 
-    // id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    // nome varchar(255) NOT NULL,
-    // email varchar(255) NOT NULL,
-    // nivel varchar(1) NOT NULL,
-    // senha varchar(15) not NULL
+// id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+// nome varchar(255) NOT NULL,
+// email varchar(255) NOT NULL,
+// nivel varchar(1) NOT NULL,
+// senha varchar(15) not NULL
 
 #Nome do arquivo Aluno.class.php
 
-class Aluno extends CRUD{
+class Aluno extends CRUD
+{
 
     protected $table = "Aluno";
     private $id;
@@ -17,7 +18,8 @@ class Aluno extends CRUD{
     private $nivel;
     private $senha;
 
-    public function add(){
+    public function add()
+    {
         #Sql de Inserir
         $sql = "INSERT INTO Aluno (nomeAluno, emailAluno, celularAluno, estadoCivilAluno, statusAluno, foto) VALUES (:nomeAluno, :emailAluno, :celularAluno, :estadoCivilAluno, :statusAluno, :foto)";
 
@@ -25,23 +27,39 @@ class Aluno extends CRUD{
         $stmt = Database::prepare($sql);
 
         #atribuindo os valores aos parâmetros
-        $stmt->bindParam(":nomeUsuario", $this->nome) ;
-        $stmt->bindParam(":emailUsuario", $this->email) ;
-        $stmt->bindParam(":nivel", $this->nivel) ;
-        $stmt->bindParam(":senha", $this->senha) ;
-     
+        $stmt->bindParam(":nomeUsuario", $this->nome);
+        $stmt->bindParam(":emailUsuario", $this->email);
+        $stmt->bindParam(":nivel", $this->nivel);
+        $stmt->bindParam(":senha", $this->senha);
+
 
         $stmt->execute();
 
     }
 
-    public function update($campo, $id){
-    
+    public function get($id)
+    {
+
+    }
+
+    public function getAll()
+    {
+
+    }
+
+    public function update($campo, $valor, $id)
+    {
+
+    }
+
+    public function delete($id)
+    {
+
     }
 
     /**
      * Get the value of nivel
-     */ 
+     */
     public function getNivel()
     {
         return $this->nivel;
@@ -51,7 +69,7 @@ class Aluno extends CRUD{
      * Set the value of nivel
      *
      * @return  self
-     */ 
+     */
     public function setNivel($nivel)
     {
         $this->nivel = $nivel;
@@ -61,7 +79,7 @@ class Aluno extends CRUD{
 
     /**
      * Get the value of email
-     */ 
+     */
     public function getEmail()
     {
         return $this->email;
@@ -71,7 +89,7 @@ class Aluno extends CRUD{
      * Set the value of email
      *
      * @return  self
-     */ 
+     */
     public function setEmail($email)
     {
         $this->email = $email;
@@ -81,7 +99,7 @@ class Aluno extends CRUD{
 
     /**
      * Get the value of nome
-     */ 
+     */
     public function getNome()
     {
         return $this->nome;
@@ -91,7 +109,7 @@ class Aluno extends CRUD{
      * Set the value of nome
      *
      * @return  self
-     */ 
+     */
     public function setNome($nome)
     {
         $this->nome = $nome;
@@ -101,7 +119,7 @@ class Aluno extends CRUD{
 
     /**
      * Get the value of id
-     */ 
+     */
     public function getId()
     {
         return $this->id;
@@ -111,7 +129,7 @@ class Aluno extends CRUD{
      * Set the value of id
      *
      * @return  self
-     */ 
+     */
     public function setId($id)
     {
         $this->id = $id;
@@ -121,7 +139,7 @@ class Aluno extends CRUD{
 
     /**
      * Get the value of senha
-     */ 
+     */
     public function getSenha()
     {
         return $this->senha;
@@ -131,7 +149,7 @@ class Aluno extends CRUD{
      * Set the value of senha
      *
      * @return  self
-     */ 
+     */
     public function setSenha($senha)
     {
         $this->senha = $senha;

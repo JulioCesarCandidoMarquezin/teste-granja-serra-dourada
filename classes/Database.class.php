@@ -1,5 +1,6 @@
 <?php
-final class Database{
+final class Database
+{
     private static $driver = "mysql"; # Driver de conexão com banco de dados
     private static $host = "localhost"; # Endereço do banco de dados
     private static $dbname = "granja-serra-dourada"; #Nome do banco de dados
@@ -10,13 +11,14 @@ final class Database{
     private static $pdo = null;
     private static $error;
 
-    public static function connect() {
+    public static function connect()
+    {
         if (self::$pdo === null) {
             if (self::$driver === "mysql") {
-                $dsn ="mysql:host=" . self::$host . "; port=" . self::$port . ";dbname=" . self::$dbname . ";charset=" . self::$charset;
-            }elseif (self::$driver === "pgsql") {
-                $dsn ="pgsql:host=" . self::$host . "; port=" . self::$port . ";dbname=" . self::$dbname;
-            }else {
+                $dsn = "mysql:host=" . self::$host . "; port=" . self::$port . ";dbname=" . self::$dbname . ";charset=" . self::$charset;
+            } elseif (self::$driver === "pgsql") {
+                $dsn = "pgsql:host=" . self::$host . "; port=" . self::$port . ";dbname=" . self::$dbname;
+            } else {
                 throw new Exception("Driver de banco de banco e dados não suportado" . self::$driver);
             }
 
@@ -27,11 +29,11 @@ final class Database{
                 PDO::ATTR_EMULATE_PREPARES => false, #evitar emular pelo PHP
             ];
 
-            try{
+            try {
                 self::$pdo = new PDO($dsn, self::$username, self::$password, $options);
-            } catch(PDOException $e){
+            } catch (PDOException $e) {
                 self::$error = $e->getMessage();
-                echo"Erro de conexão" . self::$error;
+                echo "Erro de conexão" . self::$error;
             }
         }
         #retorna a conexão
@@ -40,9 +42,10 @@ final class Database{
 
     #Método estático para preparar uma declaração SQL
 
-    public static function prepare($sql) {
+    public static function prepare($sql)
+    {
         $pdo = self::connect();
-        if($pdo){
+        if ($pdo) {
             return $pdo->prepare($sql);
         }
         return false;
