@@ -1,11 +1,11 @@
 @import url(/css/base.css);
 
 :root {
-    --brown-dark: #5E3012;
-    --brown-light: #997C64;
-    --beige-light: #DECEB7;
-    --yellow-dark: #F0CA74;
-    --yellow-light: #FCCC8C;
+    --brown-dark: #5e3012;
+    --brown-light: #997c64;
+    --beige-light: #deceb7;
+    --yellow-dark: #f0ca74;
+    --yellow-light: #fccc8c;
 
     --box-shadow-light: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -37,7 +37,7 @@
 }
 
 .cards-title:after {
-    content: '';
+    content: "";
     width: 100px;
     height: 4px;
     background-color: #f9c987;
@@ -61,7 +61,9 @@
     padding: 20px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease, background-color 0.4s ease;
+    transition:
+        transform 0.4s ease,
+        background-color 0.4s ease;
 }
 
 .card:hover {
@@ -82,7 +84,7 @@
 
 /* Highlight */
 .highlights-container .highlight:nth-child(odd) {
-    background-color: var(--beige-light); 
+    background-color: var(--beige-light);
     color: var(--brown-dark);
 }
 
@@ -130,7 +132,9 @@
     font-weight: bold;
     border-radius: 8px;
     text-decoration: none;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    transition:
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
 }
 
 .highlight-button:hover {
@@ -152,16 +156,16 @@
     }
 
     .highlight-text {
-        order: 1; 
+        order: 1;
     }
 
     .highlight-button {
-        order: 2; 
-        margin-top: 10px; 
+        order: 2;
+        margin-top: 10px;
     }
 
     .highlight-image {
-        order: 3; 
+        order: 3;
         margin-top: 20px;
         height: fit-content;
     }
@@ -173,7 +177,7 @@
     }
 
     .highlight-text h2 {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 }
 
@@ -195,7 +199,7 @@
 .differentials-title {
     font-size: 2rem;
     color: var(--brown-dark);
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
     font-weight: bold;
     margin-bottom: 40px;
 }
@@ -204,7 +208,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    align-items: stretch; 
+    align-items: stretch;
     justify-content: center;
 }
 
@@ -213,10 +217,10 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 250px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.3s ease;
 }
 
