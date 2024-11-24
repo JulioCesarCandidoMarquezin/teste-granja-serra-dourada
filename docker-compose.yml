@@ -4,16 +4,18 @@ services:
   app:
     image: php:8.2-apache
     container_name: php-apache
+    build:
+      context: .
+      dockerfile: ./php/Dockerfile
     volumes:
       - .:/var/www/html
       - ./php/php.ini:/usr/local/etc/php/php.ini
+      - ./apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./apache/.htaccess:/var/www/html/.htaccess
     ports:
       - "80:80"
     depends_on:
       - db
-    build:
-      context: .
-      dockerfile: ./php/Dockerfile
     environment:
       APACHE_DOCUMENT_ROOT: /var/www/html
 
