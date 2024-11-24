@@ -1,8 +1,10 @@
 FROM php:8.2-apache
 
-RUN apt-get update && apt-get install -y \
-    libzip-dev \
-    zip \
-    && docker-php-ext-install pdo_mysql zip
-
+# Habilitar módulos do Apache (se necessário)
 RUN a2enmod rewrite
+
+# Copiar o arquivo php.ini para a configuração do PHP
+COPY ./php/php.ini /usr/local/etc/php/
+
+# Instalar extensões PHP (se necessário)
+RUN docker-php-ext-install mysqli pdo pdo_mysql

@@ -4,12 +4,20 @@ services:
   app:
     image: php:8.2-apache
     container_name: php-apache
+    build:
+      context: .
+      dockerfile: ./php/Dockerfile
     volumes:
-      - .:/var/www/html:cached
+      - .:/var/www/html
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+      - ./apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./apache/.htaccess:/var/www/html/.htaccess
     ports:
       - "80:80"
     depends_on:
       - db
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/html
 
   db:
     image: mysql:8.0
@@ -30,7 +38,7 @@ services:
     environment:
       PMA_HOST: db
       PMA_USER: root
-      PMA_PASSWORD: rootpassword
+      PMA_PASSWORD: root
     ports:
       - "8080:80"
     depends_on:
